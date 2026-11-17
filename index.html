@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gossip Girl | XOXO</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #fff8fa;
+  color: #34232b;
+  font-family: Georgia, serif;
+}
+
+nav {
+  background: #21131d;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  color: #f8d6df;
+  text-decoration: none;
+  margin: 0 16px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #d5ac69;
+}
+
+.hero {
+  min-height: 550px;
+  background:
+    linear-gradient(
+      rgba(15, 8, 16, 0.25),
+      rgba(15, 8, 16, 0.85)
+    ),
+    url("images/gossip1.jpeg") center/cover;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 9vw, 95px);
+  letter-spacing: 7px;
+  margin: 0;
+}
+
+.hero p {
+  color: #f3d5b0;
+  letter-spacing: 4px;
+}
+
+section {
+  padding: 75px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  color: #873b61;
+}
+
+.description {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.9;
+  font-size: 18px;
+}
+
+.gold {
+  color: #b78c4f;
+}
+
+.cast-photo {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 18px;
+  margin-top: 30px;
+  box-shadow: 0 12px 35px #0002;
+}
+
+.characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.card {
+  background: white;
+  width: 210px;
+  padding: 25px 15px;
+  border-radius: 15px;
+  border: 1px solid #f1d4dd;
+  box-shadow: 0 6px 20px #0001;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px #0002;
+}
+
+.card h3 {
+  color: #8b3d62;
+}
+
+.friendship {
+  background: #f9e7ee;
+}
+
+.friendship img {
+  width: 100%;
+  max-width: 720px;
+  border-radius: 20px;
+  margin: 25px 0;
+}
+
+.quote {
+  background: #2a1724;
+  color: white;
+  padding: 80px 20px;
+}
+
+.quote h2 {
+  color: #e5bd80;
+}
+
+footer {
+  background: #1c111a;
+  color: #f5d8e2;
+  padding: 30px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#characters">Characters</a>
+  <a href="#friendship">Friendship</a>
+  <a href="#favorite">My Favorite</a>
+</nav>
+
+<header class="hero">
+  <div>
+    <p>WELCOME TO THE UPPER EAST SIDE</p>
+    <h1>GOSSIP GIRL</h1>
+    <h3>XOXO, Gossip Girl</h3>
+  </div>
+</header>
+
+<section id="about">
+  <h2>Welcome to Manhattan</h2>
+  <p class="description">
+    Gossip Girl is an American teen drama
+    series set in New York City.
+    The story follows a group of privileged
+    teenagers living on the Upper East Side.
+    Their lives are filled with fashion,
+    romance, friendship, secrets and drama.
+    An anonymous blogger known as Gossip Girl
+    reveals their biggest secrets.
+  </p>
+  <img class="cast-photo"
+       src="images/gossip2.jpeg"
+       alt="Gossip Girl cast">
+</section>
+
+<section id="characters">
+  <h2>Meet the Upper East Siders</h2>
+  <p class="gold">The icons. The secrets. The drama.</p>
+
+  <div class="characters">
+    <div class="card">
+      <h3>Blair Waldorf</h3>
+      <p>The Queen B</p>
+      <p>Elegant, ambitious and stylish.</p>
+    </div>
+
+    <div class="card">
+      <h3>Serena van der Woodsen</h3>
+      <p>The It Girl</p>
+      <p>Beautiful, charming and free-spirited.</p>
+    </div>
+
+    <div class="card">
+      <h3>Chuck Bass</h3>
+      <p>The Bad Boy</p>
+      <p>Mysterious, wealthy and confident.</p>
+    </div>
+
+    <div class="card">
+      <h3>Nate Archibald</h3>
+      <p>The Golden Boy</p>
+      <p>Kind, loyal and handsome.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dan Humphrey</h3>
+      <p>Lonely Boy</p>
+      <p>A writer from Brooklyn.</p>
+    </div>
+  </div>
+</section>
+
+<section id="friendship" class="friendship">
+  <h2>Blair & Serena</h2>
+  <p class="description">
+    Two best friends, two different personalities.
+    Blair and Serena have one of the most iconic
+    friendships in the series.
+    Their friendship is full of love,
+    competition, secrets and unforgettable moments.
+  </p>
+
+  <img src="images/gossip3.jpeg"
+       alt="Blair and Serena">
+
+  <h3>Best friends, fashion icons, legends.</h3>
+</section>
+
+<section id="favorite">
+  <h2>Why I Love Gossip Girl</h2>
+  <p class="description">
+    I love Gossip Girl because of its amazing
+    fashion, interesting characters,
+    beautiful New York locations and dramatic
+    storylines. Every episode is full of
+    surprises, making the show exciting
+    and unforgettable.
+  </p>
+</section>
+
+<div class="quote">
+  <h2>"You know you love me."</h2>
+  <p>XOXO, Gossip Girl</p>
+</div>
+
+<footer>
+  <p>GOSSIP GIRL | THE UPPER EAST SIDE</p>
+  <p>Made with love and a little drama.</p>
+</footer>
+
+</body>
+</html>
